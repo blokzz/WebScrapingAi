@@ -24,3 +24,4 @@ def clean_body_content(body_content):
     soup = BeautifulSoup(body_content,"html.parser")
     for script_or_style in soup(["script","style"]):
         script_or_style.extract()
+        
